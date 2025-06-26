@@ -1,0 +1,16 @@
+E:\devs\projetos\Danfws\bin\Debug\net8.0-windows\Danfws.exe
+E:\devs\projetos\Danfws\bin\Debug\net8.0-windows\Danfws.deps.json
+E:\devs\projetos\Danfws\bin\Debug\net8.0-windows\Danfws.runtimeconfig.json
+E:\devs\projetos\Danfws\bin\Debug\net8.0-windows\Danfws.dll
+E:\devs\projetos\Danfws\bin\Debug\net8.0-windows\Danfws.pdb
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.Form1.resources
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.csproj.GenerateResource.cache
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.GeneratedMSBuildEditorConfig.editorconfig
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.AssemblyInfoInputs.cache
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.AssemblyInfo.cs
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.csproj.CoreCompileInputs.cache
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.dll
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\refint\Danfws.dll
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.pdb
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.genruntimeconfig.cache
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\ref\Danfws.dll
