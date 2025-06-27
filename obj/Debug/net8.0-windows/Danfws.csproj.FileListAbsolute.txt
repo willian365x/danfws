@@ -14,3 +14,4 @@ E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\refint\Danfws.dll
 E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.pdb
 E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.genruntimeconfig.cache
 E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\ref\Danfws.dll
+E:\devs\projetos\Danfws\obj\Debug\net8.0-windows\Danfws.sourcelink.json

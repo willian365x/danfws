@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Danfws")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe301a764c5cde55457cef54cafc3e85c48ba6bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Danfws")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Danfws")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
