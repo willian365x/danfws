@@ -40,8 +40,46 @@ namespace Danfws
             LoadDadosIde(doc);
             LoadDadosEmit(doc);
             LoadDadosTransporte(doc);
+            LoadDadosCobranca(doc);
             LoadDadosProdutos(doc);
 
+        }
+
+        private async void LoadDadosCobranca(XmlDocument doc)
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Num.Duplicata");
+            dt.Columns.Add("Vencimento");
+            dt.Columns.Add("Valor");
+
+            XmlNodeList? cobr = doc.GetElementsByTagName("cobr");
+            XmlNodeList? dup = doc.GetElementsByTagName("dup");
+
+            foreach (XmlNode node in cobr)
+            {
+                textBox48.Text = node["fat"]?["nFat"]?.InnerText;
+                textBox49.Text = node["fat"]?["vOrig"]?.InnerText;
+                textBox50.Text = node["fat"]?["vDesc"]?.InnerText;
+                textBox51.Text = node["fat"]?["vLiq"]?.InnerText;
+            }
+
+            await Task.Run(() =>
+            {
+                foreach (XmlNode node in dup)
+                {
+                    DataRow dados = dt.NewRow();
+                    dados[0] = node["nDup"]?.InnerText;
+                    dados[1] = GetDataConvertida(node["dVenc"]?.InnerText);
+                    dados[2] = node["vDup"]?.InnerText;
+
+                    dt.Rows.Add(dados);
+                }
+
+                this.Invoke(new Action(() =>
+                {
+                    dgDuplicatas.DataSource = dt;
+                }));
+            });
         }
 
         private void LoadDadosTransporte(XmlDocument doc)
@@ -87,7 +125,7 @@ namespace Danfws
         }
 
         private void LoadDadosIde(XmlDocument doc)
-        {       
+        {
             XmlNodeList? ide = doc.GetElementsByTagName("ide");
 
             foreach (XmlNode node in ide)
@@ -118,11 +156,6 @@ namespace Danfws
 
         private async void LoadDadosProdutos(XmlDocument doc)
         {
-            if (string.IsNullOrEmpty(Arquivo))
-                return;
-
-            doc.Load(Arquivo);
-
             DataTable tabela = new DataTable();
 
             tabela.Columns.Add("Cod.Prod");
@@ -258,6 +291,26 @@ namespace Danfws
             }
 
             LoadDados();
+        }
+
+        private void dgProdutos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgProdutos.Columns[e.ColumnIndex].Name == "CFOP" && e.RowIndex >= 0)
+            {
+                var cfop = e.Value?.ToString() ?? string.Empty;
+                DataGridViewRow currentRow = dgProdutos.Rows[e.RowIndex];
+
+                if (cfop.StartsWith("64"))
+                {
+                    currentRow.DefaultCellStyle.BackColor = Color.PaleVioletRed;
+                    currentRow.DefaultCellStyle.ForeColor = Color.White;
+                }
+                else
+                {
+                    currentRow.DefaultCellStyle.BackColor = Color.White;
+                    currentRow.DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
         }
     }
 }

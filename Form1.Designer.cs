@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             groupBox2 = new GroupBox();
@@ -131,24 +132,24 @@
             label38 = new Label();
             textBox36 = new TextBox();
             label37 = new Label();
+            tabPage6 = new TabPage();
+            groupBox4 = new GroupBox();
+            dgDuplicatas = new DataGridView();
+            groupBox3 = new GroupBox();
+            textBox51 = new TextBox();
+            textBox50 = new TextBox();
+            textBox49 = new TextBox();
+            textBox48 = new TextBox();
+            label52 = new Label();
+            label51 = new Label();
+            label50 = new Label();
+            label49 = new Label();
             groupBox1 = new GroupBox();
             dgProdutos = new DataGridView();
             btnLoadArquivos = new Button();
             lbArquivos = new ListBox();
             label1 = new Label();
             tabPage2 = new TabPage();
-            tabPage6 = new TabPage();
-            groupBox3 = new GroupBox();
-            label49 = new Label();
-            label50 = new Label();
-            label51 = new Label();
-            label52 = new Label();
-            textBox48 = new TextBox();
-            textBox49 = new TextBox();
-            textBox50 = new TextBox();
-            textBox51 = new TextBox();
-            groupBox4 = new GroupBox();
-            dataGridView1 = new DataGridView();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -156,12 +157,12 @@
             tabPage3.SuspendLayout();
             tabPage4.SuspendLayout();
             tabPage5.SuspendLayout();
+            tabPage6.SuspendLayout();
+            groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgDuplicatas).BeginInit();
+            groupBox3.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgProdutos).BeginInit();
-            tabPage6.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -192,7 +193,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox2.Controls.Add(tabControl2);
             groupBox2.Location = new Point(10, 165);
             groupBox2.Name = "groupBox2";
@@ -1111,10 +1112,136 @@
             label37.TabIndex = 0;
             label37.Text = "Mod.Frete";
             // 
+            // tabPage6
+            // 
+            tabPage6.BackColor = Color.Lavender;
+            tabPage6.Controls.Add(groupBox4);
+            tabPage6.Controls.Add(groupBox3);
+            tabPage6.Location = new Point(4, 26);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Padding = new Padding(3);
+            tabPage6.Size = new Size(1371, 198);
+            tabPage6.TabIndex = 3;
+            tabPage6.Text = "Cobrança";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(dgDuplicatas);
+            groupBox4.Location = new Point(305, 6);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(1060, 186);
+            groupBox4.TabIndex = 1;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Duplicatas";
+            // 
+            // dgDuplicatas
+            // 
+            dataGridViewCellStyle1.BackColor = SystemColors.Info;
+            dgDuplicatas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgDuplicatas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgDuplicatas.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgDuplicatas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgDuplicatas.Dock = DockStyle.Fill;
+            dgDuplicatas.EnableHeadersVisualStyles = false;
+            dgDuplicatas.Location = new Point(3, 19);
+            dgDuplicatas.Name = "dgDuplicatas";
+            dgDuplicatas.Size = new Size(1054, 164);
+            dgDuplicatas.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(textBox51);
+            groupBox3.Controls.Add(textBox50);
+            groupBox3.Controls.Add(textBox49);
+            groupBox3.Controls.Add(textBox48);
+            groupBox3.Controls.Add(label52);
+            groupBox3.Controls.Add(label51);
+            groupBox3.Controls.Add(label50);
+            groupBox3.Controls.Add(label49);
+            groupBox3.Location = new Point(6, 6);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(5);
+            groupBox3.Size = new Size(293, 127);
+            groupBox3.TabIndex = 0;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Fatura";
+            // 
+            // textBox51
+            // 
+            textBox51.BorderStyle = BorderStyle.None;
+            textBox51.Enabled = false;
+            textBox51.Location = new Point(130, 96);
+            textBox51.Name = "textBox51";
+            textBox51.Size = new Size(157, 16);
+            textBox51.TabIndex = 7;
+            // 
+            // textBox50
+            // 
+            textBox50.BorderStyle = BorderStyle.None;
+            textBox50.Enabled = false;
+            textBox50.Location = new Point(130, 74);
+            textBox50.Name = "textBox50";
+            textBox50.Size = new Size(157, 16);
+            textBox50.TabIndex = 6;
+            // 
+            // textBox49
+            // 
+            textBox49.BorderStyle = BorderStyle.None;
+            textBox49.Enabled = false;
+            textBox49.Location = new Point(130, 52);
+            textBox49.Name = "textBox49";
+            textBox49.Size = new Size(157, 16);
+            textBox49.TabIndex = 5;
+            // 
+            // textBox48
+            // 
+            textBox48.BorderStyle = BorderStyle.None;
+            textBox48.Enabled = false;
+            textBox48.Location = new Point(130, 30);
+            textBox48.Name = "textBox48";
+            textBox48.Size = new Size(157, 16);
+            textBox48.TabIndex = 4;
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Location = new Point(8, 98);
+            label52.Name = "label52";
+            label52.Size = new Size(120, 17);
+            label52.TabIndex = 3;
+            label52.Text = "Valor Liquido:";
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Location = new Point(8, 76);
+            label51.Name = "label51";
+            label51.Size = new Size(88, 17);
+            label51.TabIndex = 2;
+            label51.Text = "Descontos:";
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.Location = new Point(8, 53);
+            label50.Name = "label50";
+            label50.Size = new Size(56, 17);
+            label50.TabIndex = 1;
+            label50.Text = "Valor:";
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.Location = new Point(8, 31);
+            label49.Name = "label49";
+            label49.Size = new Size(88, 17);
+            label49.TabIndex = 0;
+            label49.Text = "Nº.Fatura:";
+            // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.Controls.Add(dgProdutos);
-            groupBox1.Dock = DockStyle.Bottom;
             groupBox1.Location = new Point(10, 421);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(5);
@@ -1127,27 +1254,27 @@
             // 
             dgProdutos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgProdutos.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.Teal;
-            dataGridViewCellStyle5.Font = new Font("Cascadia Mono", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.Teal;
+            dataGridViewCellStyle2.Font = new Font("Cascadia Mono", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgProdutos.Dock = DockStyle.Fill;
             dgProdutos.Location = new Point(5, 21);
             dgProdutos.MultiSelect = false;
             dgProdutos.Name = "dgProdutos";
             dgProdutos.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new Font("Cascadia Mono", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dgProdutos.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            dgProdutos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewCellStyle3.Font = new Font("Cascadia Mono", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dgProdutos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dgProdutos.Size = new Size(1375, 294);
             dgProdutos.TabIndex = 0;
+            dgProdutos.CellFormatting += dgProdutos_CellFormatting;
             // 
             // btnLoadArquivos
             // 
@@ -1193,127 +1320,6 @@
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
-            // 
-            tabPage6.Controls.Add(groupBox4);
-            tabPage6.Controls.Add(groupBox3);
-            tabPage6.Location = new Point(4, 26);
-            tabPage6.Name = "tabPage6";
-            tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(1371, 198);
-            tabPage6.TabIndex = 3;
-            tabPage6.Text = "Cobrança";
-            tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(textBox51);
-            groupBox3.Controls.Add(textBox50);
-            groupBox3.Controls.Add(textBox49);
-            groupBox3.Controls.Add(textBox48);
-            groupBox3.Controls.Add(label52);
-            groupBox3.Controls.Add(label51);
-            groupBox3.Controls.Add(label50);
-            groupBox3.Controls.Add(label49);
-            groupBox3.Location = new Point(6, 6);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(5);
-            groupBox3.Size = new Size(293, 127);
-            groupBox3.TabIndex = 0;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Fatura";
-            // 
-            // label49
-            // 
-            label49.AutoSize = true;
-            label49.Location = new Point(8, 31);
-            label49.Name = "label49";
-            label49.Size = new Size(88, 17);
-            label49.TabIndex = 0;
-            label49.Text = "Nº.Fatura:";
-            // 
-            // label50
-            // 
-            label50.AutoSize = true;
-            label50.Location = new Point(8, 53);
-            label50.Name = "label50";
-            label50.Size = new Size(56, 17);
-            label50.TabIndex = 1;
-            label50.Text = "Valor:";
-            // 
-            // label51
-            // 
-            label51.AutoSize = true;
-            label51.Location = new Point(8, 76);
-            label51.Name = "label51";
-            label51.Size = new Size(88, 17);
-            label51.TabIndex = 2;
-            label51.Text = "Descontos:";
-            // 
-            // label52
-            // 
-            label52.AutoSize = true;
-            label52.Location = new Point(8, 98);
-            label52.Name = "label52";
-            label52.Size = new Size(120, 17);
-            label52.TabIndex = 3;
-            label52.Text = "Valor Liquido:";
-            // 
-            // textBox48
-            // 
-            textBox48.BorderStyle = BorderStyle.None;
-            textBox48.Enabled = false;
-            textBox48.Location = new Point(130, 30);
-            textBox48.Name = "textBox48";
-            textBox48.Size = new Size(157, 16);
-            textBox48.TabIndex = 4;
-            // 
-            // textBox49
-            // 
-            textBox49.BorderStyle = BorderStyle.None;
-            textBox49.Enabled = false;
-            textBox49.Location = new Point(130, 52);
-            textBox49.Name = "textBox49";
-            textBox49.Size = new Size(157, 16);
-            textBox49.TabIndex = 5;
-            // 
-            // textBox50
-            // 
-            textBox50.BorderStyle = BorderStyle.None;
-            textBox50.Enabled = false;
-            textBox50.Location = new Point(130, 74);
-            textBox50.Name = "textBox50";
-            textBox50.Size = new Size(157, 16);
-            textBox50.TabIndex = 6;
-            // 
-            // textBox51
-            // 
-            textBox51.BorderStyle = BorderStyle.None;
-            textBox51.Enabled = false;
-            textBox51.Location = new Point(130, 96);
-            textBox51.Name = "textBox51";
-            textBox51.Size = new Size(157, 16);
-            textBox51.TabIndex = 7;
-            // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(dataGridView1);
-            groupBox4.Location = new Point(305, 6);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1060, 186);
-            groupBox4.TabIndex = 1;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Duplicatas";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 19);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1054, 164);
-            dataGridView1.TabIndex = 0;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1333,13 +1339,13 @@
             tabPage4.PerformLayout();
             tabPage5.ResumeLayout(false);
             tabPage5.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgProdutos).EndInit();
             tabPage6.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgDuplicatas).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgProdutos).EndInit();
             ResumeLayout(false);
         }
 
@@ -1463,6 +1469,6 @@
         private TextBox textBox51;
         private TextBox textBox50;
         private GroupBox groupBox4;
-        private DataGridView dataGridView1;
+        private DataGridView dgDuplicatas;
     }
 }
